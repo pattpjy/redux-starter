@@ -9,7 +9,7 @@ store.dispatch(addTask('Task 1'));
 store.dispatch(addTask('Task 2'));
 console.log(store.getState());
 
-unsubscribe();
+// unsubscribe();
 store.dispatch(completedTask(2));
 store.dispatch(removeTask(1));
 store.dispatch(fetchTodo());
