@@ -16,6 +16,14 @@ export const completedTask = (id) => {
   return { type: TASK_COMPLETED, payload: { id: id } };
 };
 
+export const fetchTodo = () => {
+  return async function (dispatch, getState) {
+    const response = await fetch(
+      'https://jsonplaceholder.typicode.com/todos/1'
+    );
+    console.log(response);
+  };
+};
 // Reducer
 let id = 0;
 
